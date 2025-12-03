@@ -11,7 +11,7 @@ public class ThreadModulo implements Callable<Double> {
     public Double call() throws Exception {
         double ris = 0;
         for(Integer i : lista) {
-            ris += Math.pow(lista.get(i), 2);
+            ris += Math.pow(i, 2);
         }
         return Math.sqrt(ris);
     }
